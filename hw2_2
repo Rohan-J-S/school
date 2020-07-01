@@ -1,0 +1,5 @@
+name = str(input("enter name of the student: "))
+clas = int(input("enter class of the student: "))
+age = int(input("enter age of the student: "))
+print (name,clas,age)
+print (name,"\n",clas,"\n",age)
