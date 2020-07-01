@@ -1,0 +1,7 @@
+cgos = float(input("enter cost of goods sold: "))
+revenue = float(input("enter value of revenue generated: "))
+oc = float(input("enter operating cost: "))
+gp = revenue-cgos
+np = gp-oc
+pp = (np/cgos)*100
+print (gp,np,pp)
