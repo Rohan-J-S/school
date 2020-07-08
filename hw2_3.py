@@ -1,0 +1,5 @@
+x = float(input("enter a float value: "))
+y = float(input("enter a float value: "))
+z = float(input("enter a float value: "))
+exp = 4*(x**4)+3*(y**3)+9*z+6*(3.14)
+print (exp)
