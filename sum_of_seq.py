@@ -1,6 +1,13 @@
-sign = -1 
+def sign(a):
+    if a > 0:
+        return "+"
+    else: 
+        return ""
+   
+var= -1 
 sum = 0
 for x in range(1,11):
-    sign *= -1
-    sum += (x*sign)
-print(sum)
+    var *= -1
+    sum += (x*var)
+    print (sign(x*var),x*var,end = " ")
+print(" =",sum)
