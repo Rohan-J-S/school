@@ -1,0 +1,5 @@
+username = input("enter username: ")
+password = input("enter pasword: ")
+if username in password:
+    print("pls exclude username in password")
+    
