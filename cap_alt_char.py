@@ -1,9 +1,4 @@
 st = input("enter a word: ")
-out = ""
-for x in range(len(st)):
-    if x%2 == 0:
-        out += st[x]
-    else:
-        out += chr(ord(st[x])-32)
-print(out)
-    
+for x in range(1,len(st),2):
+    st = st[:x]+chr(ord(st[x])-32)+st[x+1:]
+print(st)
