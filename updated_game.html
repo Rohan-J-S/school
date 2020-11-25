@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    
+        
+</head>
+
+<body>
+    
+
+    <h2>Question:</h2><h2 id = "question"></h2>
+    <label>enter the word
+    <input id = "input"/>
+    </label>
+
+    <button onclick="submit()"> Submit </button>
+
+    <h1 id="answer"></h1>
+
+    
+    <script type="text/javascript">
+
+        var questions = [ "Enter Word 1", "Enter Word 2", "Enter Word 3" ];
+        var answers = [ "test", "hello", "random" ]
+
+        var x = 0;
+        var question = document.getElementById("question");
+        var answer = document.getElementById("question");
+
+        question.innerHTML = questions[0];
+
+        function submit( e )
+        {
+            
+                        
+            
+
+            var input = document.getElementById("input");
+            var score = document.getElementById("score");
+            if( input.value == answers[x] )
+            {
+                answer.innerHTML = "Correct answer";
+                x++;
+                question.innerHTML = questions[x];
+            }
+            else
+                answer.innerHTML = "sorry that was incorrect try again and enter the correct word to proceed to the next level";           
+            
+            if (x == 3)
+            {
+                alert("congratulations you finished the game ")
+            }
+        }
+
+
+    </script>
+    
+</body>
+
+</html>
