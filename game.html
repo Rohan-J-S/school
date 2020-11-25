@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    
+        
+</head>
+
+<body>
+    
+
+    <h2>Question:</h2><h2 id = "question"></h2>
+    <label>enter the word
+    <input id = "input"/>
+    </label>
+
+    <button onclick="submit()"> Submit </button>
+
+    <h1 id="answer"></h1>
+
+    
+    <script type="text/javascript">
+
+        var questions = [ "Enter Word 1", "Enter Word 2", "Enter Word 3" ];
+        var answers = [ "Test", "Hello", "Random" ]
+        var score = 0;
+
+        var i= 0;
+
+        var question = document.getElementById("question");
+        var answer = document.getElementById("answer");
+        
+
+        question.innerHTML = questions[0];
+
+        function submit( e )
+        {
+            i++;
+                        
+            question.innerHTML = questions[i];
+
+            var input = document.getElementById("input");
+            var score = document.getElementById("score");
+            if( input.value == answers[i-1] )
+            {
+                answer.innerHTML = "Correct answer";
+                score++;
+            }
+            else
+                answer.innerHTML = "Wrong answer";
+
+            score.innerHTML = score;
+            if( i == 3 )
+                alert( "Game Over, your score is" + score );
+            
+          
+        }
+
+
+    </script>
+    
+</body>
+
+</html>
